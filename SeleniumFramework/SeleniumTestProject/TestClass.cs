@@ -14,7 +14,8 @@ namespace SeleniumTestProject
         [Test]
         public void TestMethod()
         {
-            driver.Navigate().GoToUrl("https://www.google.com/");            
+            driver.Navigate().GoToUrl("https://www.google.com/");
+            Assert.AreEqual(driver.Title, "Gooo");
         }
 
         [TearDown]
