@@ -14,7 +14,12 @@ namespace SeleniumTestProject
         [Test]
         public void TestMethod()
         {
-            driver.Navigate().GoToUrl("www.google.com");
+            driver.Navigate().GoToUrl("https://www.google.com/");            
+        }
+
+        [TearDown]
+        public void EndTest()
+        {
             driver.Close();
             driver.Quit();
         }
