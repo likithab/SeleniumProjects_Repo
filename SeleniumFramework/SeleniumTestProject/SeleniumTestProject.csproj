@@ -58,6 +58,10 @@
       <Project>{db3e365f-605b-4a5d-a221-75c67515f29f}</Project>
       <Name>SeleniumFrameworkBase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SeleniumTestPageObjects\SeleniumTestPageObjects.csproj">
+      <Project>{7CA5A326-2A6A-4C6B-841F-63D58388A58A}</Project>
+      <Name>SeleniumTestPageObjects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.86.0.4240.2200\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.86.0.4240.2200\build\Selenium.WebDriver.ChromeDriver.targets')" />

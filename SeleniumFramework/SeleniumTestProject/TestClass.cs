@@ -1,8 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 using SeleniumFrameworkBase;
-using System;
+using SeleniumTestPageObjects;
 using System.Threading;
 
 namespace SeleniumTestProject
@@ -10,21 +9,20 @@ namespace SeleniumTestProject
     [TestFixture]
     public class BaseTest : SeleniumBrowserInit
     {
+        SeleniumEasyMainPage mainPage;
+
         public BaseTest():base("chrome")
         {
             driver=InitBrowser();
+            driver.Navigate().GoToUrl("https://www.seleniumeasy.com/test/");
+            mainPage = new SeleniumEasyMainPage(driver);
+            mainPage.clickOnStartPracticing();
         }
 
         [Test]
-        public void TestMethod()
+        public void SimpleFormPageSimpleInputTest()
         {
-            driver.Navigate().GoToUrl("https://www.seleniumeasy.com/test/");
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            IWebElement popUpElement= wait.Until(ExpectedConditions.ElementIsVisible(By.Id("at-cv-lightbox-close")));
-            popUpElement.Click();
-            driver.FindElement(By.Id("btn_basic_example")).Click();
-            Thread.Sleep(5000);
-
+            var simpleFormPage=new SeleniumEasySimpleFromDemo(driver).clickOnSimpleFormDemo();
         }
 
         [TearDown]
