@@ -23,7 +23,12 @@ namespace SeleniumTestPageObjects
         #region Webelemets
         IWebElement simpleInputEnterMessage => driver.FindElement(By.Id("user-message"));
         IWebElement simpleInputShowMessage => driver.FindElement(By.XPath("//button[text()='Show Message']"));
-        IWebElement simpleInputShowMessageValue => driver.FindElement(By.XPath(""));
+        IWebElement simpleInputShowMessageValue => driver.FindElement(By.Id("display"));
+        IWebElement multipleInputField1 => driver.FindElement(By.Id("sum1"));
+        IWebElement multipleInputField2 => driver.FindElement(By.Id("sum2"));
+        IWebElement multipleInputGetTotal => driver.FindElement(By.XPath("//button[text()='Get Total']"));
+        private IWebElement Total => driver.FindElement(By.Id("displayvalue"));
+
         #endregion
 
         #region public methods
@@ -33,6 +38,14 @@ namespace SeleniumTestPageObjects
             simpleInputEnterMessage.SendKeys(demoText);
             simpleInputShowMessage.Click();
             return simpleInputShowMessageValue.Text;
+        }
+
+        public string multipleInputFieldAction(string demoText1,string demotext2)
+        {
+            multipleInputField1.SendKeys(demoText1);
+            multipleInputField2.SendKeys(demotext2);
+            multipleInputGetTotal.Click();
+            return Total.Text;
         }
 
         #endregion
