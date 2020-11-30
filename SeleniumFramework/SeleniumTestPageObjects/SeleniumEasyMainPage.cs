@@ -29,7 +29,7 @@ namespace SeleniumTestPageObjects
 
         #region WebElements
 
-        IWebElement startPracticing => driver.FindElement(By.Id("btn_basic_example"));
+        public IWebElement startPracticing => driver.FindElement(By.Id("btn_basic_example"));
         string listOfPageNames => driver.FindElement(By.CssSelector(".list-group")).Text;
 
         #endregion
@@ -44,6 +44,8 @@ namespace SeleniumTestPageObjects
             startPracticing.Click();
             GetPageNames.GetSeleniumEasyPageNames(listOfPageNames);            
         }
+
+
 
         #endregion
 

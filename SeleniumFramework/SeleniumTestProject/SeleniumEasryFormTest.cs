@@ -21,22 +21,20 @@ namespace SeleniumTestProject
         [Test]
         public void SimpleFormPageSimpleInputTest()
         {
-            simpleFormPage.singleInputFieldActions("Hello world dot...!");
-            Thread.Sleep(5000);
+            simpleFormPage.singleInputFieldActions("Hello world dot...!");            
         }
 
         [Test]
         public void SimpleFormPageMultipleInputTest()
         {
             simpleFormPage.multipleInputFieldAction("1","2");
-            Thread.Sleep(5000);
         } 
         
         [TearDown]
         public void SimpleFormDemoTestTearDown()
         {
             driver.Navigate().Back();
-            Thread.Sleep(5000);
+            mainPage.startPracticing.Click();
         }
     }
 }

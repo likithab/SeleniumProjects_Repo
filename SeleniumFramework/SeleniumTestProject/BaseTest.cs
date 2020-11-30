@@ -8,7 +8,7 @@ namespace SeleniumTestProject
     [TestFixture]
     public class BaseTest : SeleniumBrowserInit
     {
-        SeleniumEasyMainPage mainPage;
+        internal SeleniumEasyMainPage mainPage;
 
         public BaseTest() : base("chrome")
         {
