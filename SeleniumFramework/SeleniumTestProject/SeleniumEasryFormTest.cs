@@ -21,13 +21,15 @@ namespace SeleniumTestProject
         [Test]
         public void SimpleFormPageSimpleInputTest()
         {
-            simpleFormPage.singleInputFieldActions("Hello world dot...!");            
+            string simpleText=simpleFormPage.singleInputFieldActions("Hello world dot...!");
+            Assert.That(simpleText.Equals("Hello world dot...!"));            
         }
 
         [Test]
         public void SimpleFormPageMultipleInputTest()
         {
-            simpleFormPage.multipleInputFieldAction("1","2");
+            string multipleText=simpleFormPage.multipleInputFieldAction("1","2");
+            Assert.That(multipleText.Equals("3"));
         } 
         
         [TearDown]
