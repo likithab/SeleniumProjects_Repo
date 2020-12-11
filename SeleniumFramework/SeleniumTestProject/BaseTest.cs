@@ -9,6 +9,8 @@ namespace SeleniumTestProject
     public class BaseTest : SeleniumBrowserInit
     {
         internal SeleniumEasyMainPage mainPage;
+        internal SimpleFormDemoPage simpleFormPage;
+
 
         public BaseTest() : base("chrome")
         {

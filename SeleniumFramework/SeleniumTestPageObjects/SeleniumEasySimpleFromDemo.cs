@@ -17,11 +17,18 @@ namespace SeleniumTestPageObjects
         }
 
         IWebElement simpleFormDemo => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Simple Form Demo']"));
+        IWebElement checkBoxDemo => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Check Box Demo']"));
 
         public SimpleFormDemoPage clickOnSimpleFormDemo()
         {
             simpleFormDemo.Click();
             return new SimpleFormDemoPage(driver);
+        }
+
+        public SimpleCheckBoxDemoPage clickOnCheckBoxDemo()
+        {
+            checkBoxDemo.Click();
+            return new SimpleCheckBoxDemoPage(driver);
         }
 
     }

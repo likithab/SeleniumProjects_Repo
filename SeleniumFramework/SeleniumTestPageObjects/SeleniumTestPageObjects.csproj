@@ -52,6 +52,7 @@
     <Compile Include="SeleniumEasyMainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumEasySimpleFromDemo.cs" />
+    <Compile Include="SimpleCheckBoxDemoPage.cs" />
     <Compile Include="SimpleFormDemoPage.cs" />
   </ItemGroup>
   <ItemGroup>

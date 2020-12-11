@@ -1,17 +1,11 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using SeleniumFrameworkBase;
 using SeleniumTestPageObjects;
-using System.Diagnostics;
-using System.Threading;
 
 namespace SeleniumTestProject
 {
     [TestFixture]
     public class SeleniumEasryFormTest : BaseTest
     {
-        SimpleFormDemoPage simpleFormPage;
-
         [SetUp]
         public void SimpleFormDemoTestSetup()
         {
