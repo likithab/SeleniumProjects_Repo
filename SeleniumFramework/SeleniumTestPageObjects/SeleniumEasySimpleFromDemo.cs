@@ -18,6 +18,8 @@ namespace SeleniumTestPageObjects
 
         IWebElement simpleFormDemo => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Simple Form Demo']"));
         IWebElement checkBoxDemo => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Check Box Demo']"));
+        IWebElement radioButtonDemo => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Radio Buttons Demo']"));
+
 
         public SimpleFormDemoPage clickOnSimpleFormDemo()
         {
@@ -29,6 +31,12 @@ namespace SeleniumTestPageObjects
         {
             checkBoxDemo.Click();
             return new SimpleCheckBoxDemoPage(driver);
+        }
+
+        public SeleniumRadioButtonDemoPage clickOnRadioButtonDemo()
+        {
+            radioButtonDemo.Click();
+            return new SeleniumRadioButtonDemoPage(driver);
         }
 
     }
