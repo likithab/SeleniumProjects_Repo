@@ -29,14 +29,14 @@ namespace SeleniumTestPageObjects
 
         public string getCheckedValueForFemale()
         {
-            femaleGroupRadioButton.Click();
+            femaleRadioDemoButton.Click();
             getCheckedValue.Click();
             return checkedValueMessage.Text;
         }
 
         public string getCheckedValueForMale()
         {
-            maleGroupRadioButton.Click();
+            maleRadioDemoButton.Click();
             getCheckedValue.Click();
             return checkedValueMessage.Text;
         }
