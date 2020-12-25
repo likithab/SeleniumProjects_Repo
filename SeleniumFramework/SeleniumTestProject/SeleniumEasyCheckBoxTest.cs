@@ -10,7 +10,7 @@ namespace SeleniumTestProject
         [SetUp]
         public void CheckBoxDemoTestSetup()
         {
-            checkBoxDemoPage = new SeleniumEasySimpleFromDemo(driver).clickOnCheckBoxDemo();
+            checkBoxDemoPage = new SeleniumEasySimpleFromDemoPage(driver).clickOnCheckBoxDemo();
         }
 
         [Test]

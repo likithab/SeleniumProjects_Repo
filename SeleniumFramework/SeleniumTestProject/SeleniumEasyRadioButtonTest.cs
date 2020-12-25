@@ -17,7 +17,7 @@ namespace SeleniumTestProject
         [SetUp]
         public void CheckBoxDemoTestSetup()
         {
-            radioButtonDemoPage = new SeleniumEasySimpleFromDemo(driver).clickOnRadioButtonDemo();
+            radioButtonDemoPage = new SeleniumEasySimpleFromDemoPage(driver).clickOnRadioButtonDemo();
         }
 
         [Test]

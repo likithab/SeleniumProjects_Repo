@@ -9,7 +9,7 @@ namespace SeleniumTestProject
         [SetUp]
         public void SimpleFormDemoTestSetup()
         {
-            simpleFormPage = new SeleniumEasySimpleFromDemo(driver).clickOnSimpleFormDemo();
+            simpleFormPage = new SeleniumEasySimpleFromDemoPage(driver).clickOnSimpleFormDemo();
         }
 
         [Test]
