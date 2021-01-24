@@ -16,6 +16,7 @@ namespace SeleniumTestPageObjects
         IWebElement firstSelectedButton => driver.FindElement(By.Id("printMe"));
         IWebElement getAllSelected => driver.FindElement(By.Id("printAll"));
         IWebElement selectedValue => driver.FindElement(By.CssSelector(".selected-value"));
+        IWebElement multiSelectedValue => driver.FindElement(By.ClassName("getall-selected"));
 
         public static SelectElement SelectFromList(IWebElement element)
         {
@@ -37,7 +38,8 @@ namespace SeleniumTestPageObjects
             {
                 multiSelector.SelectByText(value);
             }
-            return getAllSelected.Text;
+            getAllSelected.Click();
+            return multiSelectedValue.Text;
         }
     }
 }

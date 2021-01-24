@@ -25,7 +25,7 @@ namespace SeleniumFrameworkBase
                 driver = new ChromeDriver(options: options);
                 //driver = new ChromeDriver();
             }
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             driver.Manage().Window.Maximize();
             return driver;
         }

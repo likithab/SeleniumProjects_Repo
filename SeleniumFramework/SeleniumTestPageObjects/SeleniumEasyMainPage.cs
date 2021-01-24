@@ -27,6 +27,7 @@ namespace SeleniumTestPageObjects
 
         public IWebElement startPracticing => driver.FindElement(By.Id("btn_basic_example"));
         string listOfPageNames => driver.FindElement(By.CssSelector(".list-group")).Text;
+        public IWebElement proceedNext => driver.FindElement(By.Id("btn_inter_example"));
 
         #endregion
 

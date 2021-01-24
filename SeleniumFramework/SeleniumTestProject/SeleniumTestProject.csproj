@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumEasyCheckBoxTest.cs" />
     <Compile Include="SeleniumEasyRadioButtonTest.cs" />
+    <Compile Include="SeleniumEasySelectDropDownListTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

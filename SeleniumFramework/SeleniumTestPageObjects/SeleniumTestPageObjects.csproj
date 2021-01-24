@@ -49,10 +49,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\GetPageNames.cs" />
+    <Compile Include="SeleniumAjaxFormSubmitDemoPage.cs" />
+    <Compile Include="SeleniumBootstrapAlertsDemoPage.cs" />
+    <Compile Include="SeleniumBootstrapDownloadProgressBarDemoPage.cs" />
+    <Compile Include="SeleniumBootstrapListBoxDemoPage.cs" />
+    <Compile Include="SeleniumBootstrapModalsDemoPage.cs" />
+    <Compile Include="SeleniumChartsDemoPage.cs" />
+    <Compile Include="SeleniumDataListFilterDemoPage.cs" />
+    <Compile Include="SeleniumDragAndDropDemoPage.cs" />
+    <Compile Include="SeleniumDragAndDropSlidersDemoPage.cs" />
+    <Compile Include="SeleniumDropDownListDemoPage.cs" />
+    <Compile Include="SeleniumDynamicDataLoadingDemoPage.cs" />
     <Compile Include="SeleniumEasyMainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeleniumEasySimpleFromDemo.cs" />
+    <Compile Include="SeleniumEasySimpleFromDemoPage.cs" />
+    <Compile Include="SeleniumFileDownloadDemoPage.cs" />
+    <Compile Include="SeleniumInputFormWithValidationsDemoPage.cs" />
+    <Compile Include="SeleniumJavaScritAlertsDemoPage.cs" />
+    <Compile Include="SeleniumJqueryDownloadProgressBarDemoPage.cs" />
+    <Compile Include="SeleniumJQueryListBoxDemoPage.cs" />
+    <Compile Include="SeleniumJQuerySelectDropDownDemoPage.cs" />
+    <Compile Include="SeleniumProgressBarModalDemoPage.cs" />
     <Compile Include="SeleniumRadioButtonDemoPage.cs" />
+    <Compile Include="SeleniumTableDataDownloadDemoPage.cs" />
+    <Compile Include="SeleniumTableDataSearchDemoPage.cs" />
+    <Compile Include="SeleniumTableFilterDemoPage.cs" />
+    <Compile Include="SeleniumTablePaginationDemoPage.cs" />
+    <Compile Include="SeleniumTableSortAndSearchDemoPage.cs" />
+    <Compile Include="SeleniumWindowModalPopupDemoPage.cs" />
     <Compile Include="SimpleCheckBoxDemoPage.cs" />
     <Compile Include="SimpleFormDemoPage.cs" />
   </ItemGroup>
