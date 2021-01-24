@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumTestPageObjects
@@ -34,10 +35,16 @@ namespace SeleniumTestPageObjects
         public string selectFromMultiList(params string[]  multiListValue)
         {
             var multiSelector=SelectFromList(multiSelectListDemo);
-            foreach (var value in multiListValue)
+            if (multiSelector.IsMultiple)
             {
-                multiSelector.SelectByText(value);
+                //Actions action=new Actions(driver);
+                //action.MoveToElement(multiSelectListDemo);
+                foreach (var value in multiListValue)
+                {
+                    multiSelector.SelectByText(value);
+                }
             }
+            var items= multiSelector.AllSelectedOptions;
             getAllSelected.Click();
             return multiSelectedValue.Text;
         }

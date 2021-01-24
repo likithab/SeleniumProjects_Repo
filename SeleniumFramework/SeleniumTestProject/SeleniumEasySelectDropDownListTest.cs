@@ -29,8 +29,8 @@ namespace SeleniumTestProject
         [Test]
         public void SelectFromMultiListTest()
         {
-            var selectedValue = dropDownListDemoPage.selectFromMultiList("New York", "Ohio");
-            Assert.That(selectedValue.Equals("New York, Ohio"));
+            var selectedValue = dropDownListDemoPage.selectFromMultiList("California", "Florida");
+            Assert.That(selectedValue.Contains("Florida"));
         }
 
         [TearDown]
