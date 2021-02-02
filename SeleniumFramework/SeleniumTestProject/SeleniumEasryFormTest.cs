@@ -25,12 +25,5 @@ namespace SeleniumTestProject
             string multipleText=simpleFormPage.multipleInputFieldAction("1","2");
             Assert.That(multipleText.Equals("3"));
         } 
-        
-        [TearDown]
-        public void SimpleFormDemoTestTearDown()
-        {
-            driver.Navigate().Back();
-            mainPage.startPracticing.Click();
-        }
     }
 }

@@ -50,9 +50,13 @@
     <Compile Include="BaseTest.cs" />
     <Compile Include="SeleniumEasryFormTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeleniumEasyBootStrapAlertTest.cs" />
+    <Compile Include="SeleniumEasyBootStrapModalTest.cs" />
     <Compile Include="SeleniumEasyCheckBoxTest.cs" />
+    <Compile Include="SeleniumEasyJavaScriptAlertTest.cs" />
     <Compile Include="SeleniumEasyRadioButtonTest.cs" />
     <Compile Include="SeleniumEasySelectDropDownListTest.cs" />
+    <Compile Include="SeleniumEasyWindowPopupModalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

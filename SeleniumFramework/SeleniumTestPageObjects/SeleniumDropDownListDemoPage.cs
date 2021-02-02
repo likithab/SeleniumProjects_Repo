@@ -37,15 +37,13 @@ namespace SeleniumTestPageObjects
             var multiSelector=SelectFromList(multiSelectListDemo);
             if (multiSelector.IsMultiple)
             {
-                //Actions action=new Actions(driver);
-                //action.MoveToElement(multiSelectListDemo);
                 foreach (var value in multiListValue)
                 {
                     multiSelector.SelectByText(value);
                 }
+                var items = multiSelector.AllSelectedOptions;
+                getAllSelected.Click();
             }
-            var items= multiSelector.AllSelectedOptions;
-            getAllSelected.Click();
             return multiSelectedValue.Text;
         }
     }

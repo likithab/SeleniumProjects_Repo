@@ -32,12 +32,5 @@ namespace SeleniumTestProject
             var selectedValue = dropDownListDemoPage.selectFromMultiList("California", "Florida");
             Assert.That(selectedValue.Contains("Florida"));
         }
-
-        [TearDown]
-        public void SimpleFormDemoTestTearDown()
-        {
-            driver.Navigate().Back();
-            mainPage.startPracticing.Click();
-        }
     }
 }

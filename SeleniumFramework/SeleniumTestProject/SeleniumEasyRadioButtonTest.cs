@@ -51,12 +51,5 @@ namespace SeleniumTestProject
             successMessage = successMessage.Replace("\r\n", " ");
             Assert.IsTrue(successMessage.Equals("Sex : Male Age group: 0 - 5"));
         }
-
-        [TearDown]
-        public void SimpleFormDemoTestTearDown()
-        {
-            driver.Navigate().Back();
-            mainPage.startPracticing.Click();
-        }
     }
 }

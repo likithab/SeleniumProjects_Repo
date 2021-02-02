@@ -36,5 +36,12 @@ namespace SeleniumTestProject
                 chromeDriverProcess.Kill();
             }
         }
+
+        [TearDown]
+        public void WindowPopupTestTearDown()
+        {
+            driver.Navigate().Back();
+            mainPage.startPracticing.Click();
+        }
     }
 }

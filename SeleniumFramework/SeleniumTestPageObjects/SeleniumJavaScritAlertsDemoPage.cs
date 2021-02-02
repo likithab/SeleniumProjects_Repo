@@ -15,5 +15,12 @@ namespace SeleniumTestPageObjects
         {
             this.driver = driver;
         }
+
+        public IWebElement alertBoxClickMe => driver.FindElement(By.XPath("//button[@class='btn btn-default' and text()='Click me!']"));
+        public IWebElement confirmBoxClickMe => driver.FindElement(By.XPath("//button[@class='btn btn-default btn-lg' and text()='Click me!']"));
+        public IWebElement clickForPromptBox => driver.FindElement(By.XPath("//button[text()='Click for Prompt Box']"));
+        public IWebElement confirmMessage => driver.FindElement(By.Id("confirm-demo"));
+        public IWebElement promptMessage => driver.FindElement(By.Id("prompt-demo"));
+
     }
 }

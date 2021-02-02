@@ -26,12 +26,5 @@ namespace SeleniumTestProject
             string buttonName=checkBoxDemoPage.clickAllCheckBoxes();
             Assert.That(buttonName.Equals("Uncheck All"));
         }
-
-        [TearDown]
-        public void SimpleFormDemoTestTearDown()
-        {
-            driver.Navigate().Back();
-            mainPage.startPracticing.Click();
-        }
     }
 }
