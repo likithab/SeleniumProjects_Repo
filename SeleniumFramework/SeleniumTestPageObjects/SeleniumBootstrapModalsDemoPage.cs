@@ -17,9 +17,9 @@ namespace SeleniumTestPageObjects
             this.driver = driver;
         }
 
-        IWebElement singleModal => driver.FindElement(By.XPath("//a[@href='#myModal0' and text()='Launch modal']"));
-        IWebElement multipleModal => driver.FindElement(By.XPath("//a[@href='#myModal' and text()='Launch modal']"));
-        IWebElement modalDialogClose => driver.FindElement(By.XPath("//a[text()='Close']"));
-        IWebElement multipleModalSecond => driver.FindElement(By.XPath("//a[@href='#myModal2' and text()='Launch modal']"));
+       public IWebElement singleModal => driver.FindElement(By.XPath("//a[@href='#myModal0' and text()='Launch modal']"));
+        public IWebElement multipleModal => driver.FindElement(By.XPath("//a[@href='#myModal' and text()='Launch modal']"));
+        public IWebElement modalDialogClose => driver.FindElement(By.XPath("//a[text()='Close']"));
+        public IWebElement multipleModalSecond => driver.FindElement(By.XPath("//a[@href='#myModal2' and text()='Launch modal']"));
     }
 }

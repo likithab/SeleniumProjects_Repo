@@ -20,10 +20,18 @@ namespace SeleniumTestProject
         }
 
         [Test]
-        public void TestMethod()
+        public void SingleModalDiaogTest()
         {
-            // TODO: Add your test code here
-            Assert.Pass("Your first passing test");
+            bootStrapModalDemoPage.singleModal.Click();
+            bootStrapModalDemoPage.modalDialogClose.Click();
+        }
+
+        [Test]
+        public void multipleModalDialogTest()
+        {
+            bootStrapModalDemoPage.multipleModal.Click();
+            bootStrapModalDemoPage.multipleModalSecond.Click();
+            bootStrapModalDemoPage.modalDialogClose.Click();
         }
     }
 }
