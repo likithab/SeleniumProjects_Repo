@@ -18,8 +18,8 @@ namespace SeleniumTestPageObjects
 
         IWebElement autoCloseSuccessMessage => driver.FindElement(By.Id("autoclosable-btn-success"));
         IWebElement normalSuccessMessage => driver.FindElement(By.Id("normal-btn-success"));
-        public IWebElement autoMessage => driver.FindElement(By.ClassName("alert alert-success alert-autocloseable-success"));
-        IWebElement normalMessage => driver.FindElement(By.ClassName("alert alert-success alert-normal-success"));
+        public IWebElement autoMessage => driver.FindElement(By.ClassName("alert-autocloseable-success"));
+        IWebElement normalMessage => driver.FindElement(By.ClassName("alert-normal-success"));
          
         public string ClickOnAutoCloseable()
         {

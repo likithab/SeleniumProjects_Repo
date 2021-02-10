@@ -31,7 +31,8 @@ namespace SeleniumTestProject
         {
             bootStrapModalDemoPage.multipleModal.Click();
             bootStrapModalDemoPage.multipleModalSecond.Click();
-            bootStrapModalDemoPage.modalDialogClose.Click();
+            bootStrapModalDemoPage.modalDialogCloseSecond.Click();
+            bootStrapModalDemoPage.modalDialogCloseFirst.Click();
         }
     }
 }

@@ -25,16 +25,17 @@ namespace SeleniumTestProject
         public void AutoClosableMessageTest()
         {
             var message=bootStrapDemoPage.ClickOnAutoCloseable();
-            Assert.IsTrue(message.Contains("I'm an autocloseable success  message. I will hide in 5 seconds."));
+            Assert.IsTrue(message.Contains("an autocloseable success message. I will hide in 5 seconds."));
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            Assert.IsTrue(wait.Until(ExpectedConditions.InvisibilityOfElementLocated((By)bootStrapDemoPage.autoMessage)));
+            Assert.IsTrue(wait.Until(ExpectedConditions.InvisibilityOfElementLocated
+                (By.ClassName("alert-autocloseable-success"))));
         }
 
         [Test]
         public void NormalSuccessMessageTest()
         {
             var message=bootStrapDemoPage.ClickOnNormalMessage();
-            Assert.IsTrue(message.Contains("I'm a normal success message. To close use  the appropriate button."));
+            Assert.IsTrue(message.Contains("a normal success message. To close use the appropriate button."));
         }        
     }
 }
