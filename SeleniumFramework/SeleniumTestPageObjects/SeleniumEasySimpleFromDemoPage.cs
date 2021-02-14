@@ -24,7 +24,8 @@ namespace SeleniumTestPageObjects
         IWebElement windowPopupModal => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Window Popup Modal']"));
         IWebElement bootStrapAlerts => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Bootstrap Alerts']"));
         IWebElement bootStrapModal => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Bootstrap Modals']"));
-
+        IWebElement intermediate => driver.FindElement(By.Id("inter_example"));
+        IWebElement inputFormValidation => driver.FindElement(By.XPath("//a[@class='list-group-item' and  text()='Input Form with Validations']"));
 
         public SimpleFormDemoPage clickOnSimpleFormDemo()
         {
@@ -72,6 +73,13 @@ namespace SeleniumTestPageObjects
         {
             bootStrapModal.Click();
             return new SeleniumBootstrapModalsDemoPage(driver);
+        }
+
+        public SeleniumInputFormWithValidationsDemoPage clickOnInputFormDemo()
+        {
+            intermediate.Click();
+            inputFormValidation.Click();
+            return new SeleniumInputFormWithValidationsDemoPage(driver);
         }
     }
 }

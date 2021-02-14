@@ -53,6 +53,7 @@
     <Compile Include="SeleniumEasyBootStrapAlertTest.cs" />
     <Compile Include="SeleniumEasyBootStrapModalTest.cs" />
     <Compile Include="SeleniumEasyCheckBoxTest.cs" />
+    <Compile Include="SeleniumEasyInputformValidationTest.cs" />
     <Compile Include="SeleniumEasyJavaScriptAlertTest.cs" />
     <Compile Include="SeleniumEasyRadioButtonTest.cs" />
     <Compile Include="SeleniumEasySelectDropDownListTest.cs" />
