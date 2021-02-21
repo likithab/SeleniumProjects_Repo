@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTestPageObjects
 {
-    class SeleniumDragAndDropDemoPage
+    public class SeleniumDragAndDropDemoPage
     {
         IWebDriver driver;
         public SeleniumDragAndDropDemoPage(IWebDriver driver)

@@ -20,7 +20,7 @@ namespace SeleniumTestProject
         }
         
         [Test]
-        public void TestMethod()
+        public void InputFormTest()
         {
             inputFormValidationDemoPage.FillInputForm("likitha", "b", "abcwoi", "575435", "jdhakjd", "shg", 
                 "Arizona", "3575", "hjgccuks", true, "jdhsfius");

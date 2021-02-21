@@ -50,6 +50,7 @@
     <Compile Include="BaseTest.cs" />
     <Compile Include="SeleniumEasryFormTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeleniumEasyAjaxFormSubmitTest.cs" />
     <Compile Include="SeleniumEasyBootStrapAlertTest.cs" />
     <Compile Include="SeleniumEasyBootStrapModalTest.cs" />
     <Compile Include="SeleniumEasyCheckBoxTest.cs" />

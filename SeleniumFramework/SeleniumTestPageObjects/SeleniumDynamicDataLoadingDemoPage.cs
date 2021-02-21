@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTestPageObjects
 {
-    class SeleniumDynamicDataLoadingDemoPage
+    public class SeleniumDynamicDataLoadingDemoPage
     {
         IWebDriver driver;
         public SeleniumDynamicDataLoadingDemoPage(IWebDriver driver)
